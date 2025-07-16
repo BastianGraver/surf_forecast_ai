@@ -11,4 +11,4 @@ inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
 outputs = model.generate(**inputs, max_new_tokens=250)
 
 print("\n=== Model Response ===")
-print(tokenizer.decode(outputs[0], skip_special_tokens=True))§
+print(tokenizer.decode(outputs[0], skip_special_tokens=True))
